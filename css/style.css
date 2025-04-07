@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+body {
+    display: grid;
+    grid-template-rows: auto auto;
+    height: 100%;
+    width: 100%;
+}
+.header {
+    position: relative;
+    grid-row: 1 / 2;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    p{
+        font-size: 16px;
+        color: gray;
+    }
+    h2{
+        margin-bottom: 10px;
+    }
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 20px;;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+    }
+}
+.search-container {
+    width: 100%;
+    margin: auto; 
+}
+.search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.search-wrapper input {
+    padding: 16px 16px 16px 35px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    flex: 1;
+}
+
+.search-wrapper .bi-search {
+    position: absolute;
+    left: 12px;
+    font-size: 18px;
+    color: gray;
+    pointer-events: none; 
+}
+.category-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 14px;
+    cursor: pointer;
+    font-size: 400px;
+}
+.filter-links {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+.filter-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid rgba(68, 68, 70, 0.37);
+}
+.filter-link svg {
+    width: 20px;
+    height: 20px;
+}
+
+.filter-link:hover {
+    background-color: #bbb;
+    color: black;
+}
+
+.category-icon i {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.category-icon:hover {
+    background-color: #bbb;
+    color: #333;
+}
+.category-icon:hover i {
+    color: #333;
+}
+.filter-link:focus {
+    background-color: black;
+    color: white;
+    outline: none;
+}
+.filters {
+    display: flex;
+    grid-row: 2;
+}
+.filters a:hover {
+    transition: 0.1s ease;
+    background-color: rgb(173, 173, 173);
+    color: white;
+}
+.filters a:focus {
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10px;
+}
+
+.product {
+    padding: 15px;
+    a{
+        text-decoration: none;
+    }
+}
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product .product-info {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.product h3 {
+    font-size: 21px;
+    font-weight: 650;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 14px;
+    color: gray;
+    margin: 5px 0;
+}
+
+.product .price-rating {
+    display: flex;
+    margin-top: 15px;
+    h4{
+        margin-left: 25px;
+    }
+}
+
+.product .price-rating h2 {
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+}
+
+.product .price-rating h4 {
+    font-size: 15px;
+    color: rgb(54, 54, 54);
+    font-weight: 500;
+}
+
+.product:hover {
+    transition: 0.2s ease;
+    transform: scale(1.05);
+}
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: rgb(29, 29, 29);
+    width: 90%;
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    z-index: 1000;
+    .nav-icons {
+        background-color: rgb(29, 29, 29);
+        border-radius: 50px;
+        padding: 5px;
+        color: white;
+    }
+    .nav-icons:hover {
+        background-color: rgb(131, 131, 131);
+    }
+}
+.heart-icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: rgba(0, 0, 0, 0.795);
+    padding: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    outline: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  .heart-icon i {
+    font-size: 20px;
+    position: absolute;
+    transition: opacity 0.3s ease;
+  }
+  .heart-icon .filled-heart {
+    opacity: 0;
+  }
+  .heart-icon:focus .filled-heart {
+    opacity: 1;
+    color: black;
+  }
+
+  .heart-icon:focus .empty-heart {
+    opacity: 0;
+  }
+.heart-icon:hover {
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
+}
+.heart-icon:focus {
+    background-color: white;
+}
+.product {
+    position: relative;
+}
+@media (min-width: 768px) {
+    .filter-link {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 18px;
+        text-decoration: none;
+        color: #333;
+        border: 1px solid rgba(68, 68, 70, 0.37);
+    }
+    .filter-link svg {
+        width: 25px;
+        height: 25px;
+    }
+    .header {
+        position: relative;
+        grid-row: 1 / 2;
+        padding-top: 2%;
+        padding-left: 2%;
+        padding-right: 2%;
+        p{
+            font-size: 20px;
+            color: gray;
+        }
+        h2{
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 20px;;
+            width: 60px;
+            height: 62px;
+            border-radius: 50px;
+        }
+    }
+    .product h3 {
+        font-size: 30px;
+        font-weight: 650;
+        color: #333;
+        margin: 10px 0;
+    }
+    
+    .product p {
+        font-size: 20px;
+        color: gray;
+        margin: 5px 0;
+    }
+
+    .product .price-rating h2 {
+        font-weight: 600;
+        font-size: 23px;
+    }
+    
+    .product .price-rating h4 {
+        font-size: 20px;
+        color: rgb(54, 54, 54);
+        font-weight: 500;
+    }
+    .nav{
+        width: 75%;
+    }
+}
+@media (min-width: 1000px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    .nav{
+        width: 60%;
+    }
+}

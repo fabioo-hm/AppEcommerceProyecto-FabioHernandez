@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.checkout{
+    display: grid;
+}
+.product{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #cccccc50;
+    margin: 15px;
+    img{
+        width: 25%;
+        height: 90px;
+        border-radius: 15px;
+        object-fit: cover;
+        object-position: top;
+        margin-left: 6px;
+    }
+}
+.product-info{
+    h2{
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    p{
+        font-size: 0.8rem;
+        color: gray;
+        margin-bottom: 20px;
+    }
+    margin-left: 20px;
+}
+.price-and-quantity {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+.cantidad {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    a {
+        color: black;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    i {
+        font-size: 20px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50px;
+        padding: 0.5px 2px;
+        text-align: center;
+        border: 1px solid rgba(165, 165, 165, 0.329);
+    }
+}
+.product-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 650;
+    margin: 0;
+}
+.options-icon {
+    font-size: 20px;
+    color: #555;
+    cursor: pointer;
+}
+.checkout .product:nth-child(5) img {
+    object-position: center 20%;
+}
+.checkout .product:nth-child(3) img{
+    object-position: center 28%;
+}
+.checkout-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+.checkout-header h1 {
+    font-size: 1.18em;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+}
+.checkout-header .back-icon {
+    position: absolute;
+    left: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #464646;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: 1px solid rgba(165, 165, 165, 0.329);
+}
+.back-icon svg {
+    width: 28px;
+    height: 27px;
+    transform: scale(1.2);
+    color: #464646;
+}
+#menu-toggle {
+    display: none;
+}
+.menu-icon {
+    position: absolute;
+    right: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 8px 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #464646;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: 1px solid rgba(165, 165, 165, 0.329);
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding: 10px 0;
+    width: 160px;
+}
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.dropdown-menu ul li {
+    padding: 10px 20px;
+}
+.dropdown-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.95rem;
+    display: block;
+    transition: background 0.3s;
+}
+.dropdown-menu ul li a:hover {
+    background-color: #f0f0f0;
+}
+#menu-toggle:checked ~ .dropdown-menu {
+    display: block;
+}
+.shipping-info {
+    width: 90%;
+    margin: 30px auto 0 auto;
+    h1{
+        font-size: 1.15rem;
+        font-weight: 550;
+        margin-bottom: 20px;
+    }
+}
+.creditcard-box {
+    background-color: #f0f0f0;
+    padding: 8px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 20px 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    img {
+        width: 50px;
+        height: auto;
+        margin-left: 15px;
+    }
+}
+.costs{
+    border-bottom: 1px solid #cccccc50;
+}
+.costs, .pay-section {
+    display: flex;
+    flex-direction: column;
+}
+.cost-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13px;
+}
+.cost-row h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+}
+.cost-row p {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+}
+.cost-row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 26px;
+    margin-bottom: 30px;
+}
+.cost-row2 h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+}
+.cost-row2 p {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+}
+.product-pay{
+    padding: 20px 0;
+    background-color: black;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 15px;
+    p{
+        color: white;
+        font-size: 17px;
+        font-weight: 700;
+    }
+}
+.product-pay:hover{
+    transition: 0.2s ease;
+    transform: scale(1.05);
+}
+.arrow-icon {
+    font-size: 1.5rem;
+    color: #666;
+    margin-right: 15px;
+    cursor: pointer;
+}
+@media (min-width: 768px){
+    .checkout{
+        display: grid;
+        gap: 20px;
+        background-color: rgba(245, 245, 245, 0.644);
+        align-items: center;
+        width: 90%;
+        margin: 2% auto;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.568);
+    }
+    .product {
+        padding: 25px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 130px;
+          height: 130px;
+        }
+      }
+      .product-info {
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        h2, .product-title {
+          font-size: 1.6rem;
+        }
+    
+        p {
+          font-size: 1.05rem;
+          margin-bottom: 18px;
+        }
+      }
+      .price-and-quantity {
+        gap: 120px;
+      }
+      .cantidad {
+        gap: 20px;
+    
+        h3 {
+          font-size: 22px;
+        }
+    
+        i {
+          font-size: 26px;
+          padding: 4px 8px;
+        }
+      }
+      .options-icon {
+        font-size: 24px;
+      }
+      .shipping-info h1 {
+        font-size: 1.5rem;
+      }
+      .creditcard-box {
+        font-size: 1.25rem;
+        padding: 12px 25px;
+        gap: 20px;
+    
+        img {
+          width: 60px;
+        }
+      }
+      .cost-row h2,
+      .cost-row2 h2 {
+        font-size: 1.15rem;
+      }
+      .cost-row p,
+      .cost-row2 p {
+        font-size: 1.3rem;
+      }
+      .product-pay p {
+        font-size: 20px;
+    }
+      .checkout-header h1 {
+        font-size: 1.5rem;
+      }
+      .checkout-header{
+        margin-top: 30px;
+      }
+}
+@media (min-width: 1000px){
+    .checkout{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        background-color: rgba(245, 245, 245, 0.644);
+        align-items: center;
+        width: 90%;
+        margin: 2% auto;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.568);
+    }
+    .product {
+        padding: 25px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 130px;
+          height: 130px;
+        }
+      }
+      .product-info {
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        h2, .product-title {
+          font-size: 1.6rem;
+        }
+    
+        p {
+          font-size: 1.05rem;
+          margin-bottom: 18px;
+        }
+      }
+      .price-and-quantity {
+        gap: 120px;
+      }
+      .cantidad {
+        gap: 20px;
+    
+        h3 {
+          font-size: 22px;
+        }
+    
+        i {
+          font-size: 26px;
+          padding: 4px 8px;
+        }
+      }
+      .options-icon {
+        font-size: 24px;
+      }
+      .shipping-info h1 {
+        font-size: 1.5rem;
+      }
+      .creditcard-box {
+        font-size: 1.25rem;
+        padding: 12px 25px;
+        gap: 20px;
+    
+        img {
+          width: 60px;
+        }
+      }
+      .cost-row h2,
+      .cost-row2 h2 {
+        font-size: 1.15rem;
+      }
+      .cost-row p,
+      .cost-row2 p {
+        font-size: 1.3rem;
+      }
+      .product-pay p {
+        font-size: 20px;
+      }
+      .checkout-header h1 {
+        font-size: 1.5rem;
+      }
+      .checkout-header{
+        margin-top: 30px;
+      }
+}

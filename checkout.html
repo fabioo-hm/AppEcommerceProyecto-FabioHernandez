@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylecheck.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <div class="checkout">
+        <div class="checkout-info">
+            <div class="checkout-header">
+                <a href="index.html" class="back-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <g fill="currentColor">
+                            <path d="m12.384 15.68l-5-6l-.768.64l5 6z"/>
+                            <path d="m11.616 16.32l-5-6c-.427-.512.341-1.152.768-.64l5 6c.427.512-.341 1.152-.768.64"/>
+                            <path d="m11.616 3.68l-5 6l.768.64l5-6z"/>
+                            <path d="m12.384 4.32l-5 6c-.427.512-1.195-.128-.768-.64l5-6c.427-.512 1.195.128.768.64"/>
+                        </g>
+                    </svg>
+                </a>
+                <h1>Checkout</h1>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">
+                    <i class="bi bi-list"></i>
+                </label>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">My Orders</a></li>
+                        <li><a href="#">Account Settings</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product">
+                <img src="storage/img/Product 1.png">
+                <div class="product-info">
+                    <div class="product-title-container">
+                        <h3 class="product-title">Modern Light Clothes</h3>
+                        <i class="bi bi-three-dots options-icon"></i>
+                    </div>
+                    <p>T-Shirt</p>
+                    <div class="price-and-quantity">
+                        <h2>$83.000</h2>
+                        <div class="cantidad">
+                            <a href="#"><i class="bi bi-dash"></i></a>
+                            <h3>4</h3>
+                            <a href="#"><i class="bi bi-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="storage/img/Product 2.png">
+                <div class="product-info">
+                    <div class="product-title-container">
+                        <h3 class="product-title">Light Dress Bless</h3>
+                        <i class="bi bi-three-dots options-icon"></i>
+                    </div>
+                    <p>Modern Dress</p>
+                    <div class="price-and-quantity">
+                        <h2>$162.000</h2>
+                        <div class="cantidad">
+                            <a href="#"><i class="bi bi-dash"></i></a>
+                            <h3>1</h3>
+                            <a href="#"><i class="bi bi-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="storage/img/Product 3.png">
+                <div class="product-info">
+                    <div class="product-title-container">
+                        <h3 class="product-title">Black Leather Jacket</h3>
+                        <i class="bi bi-three-dots options-icon"></i>
+                    </div>
+                    <p>Jacket</p>
+                    <div class="price-and-quantity">
+                        <h2>$129.000</h2>
+                        <div class="cantidad">
+                            <a href="#"><i class="bi bi-dash"></i></a>
+                            <h3>2</h3>
+                            <a href="#"><i class="bi bi-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="storage/img/Product 4.png">
+                <div class="product-info">
+                    <div class="product-title-container">
+                        <h3 class="product-title">Light Yellow Dress</h3>
+                        <i class="bi bi-three-dots options-icon"></i>
+                    </div>
+                    <p>Casual Dress</p>
+                    <div class="price-and-quantity">
+                        <h2>$137.000</h2>
+                        <div class="cantidad">
+                            <a href="#"><i class="bi bi-dash"></i></a>
+                            <h3>1</h3>
+                            <a href="#"><i class="bi bi-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shipping-info">
+            <h1>Shipping Information</h1>
+            <div class="creditcard-box">
+                <img src="storage/img/visa.png" alt="Visa">
+                <span>******** *** **** 1234</span>
+                <i class="bi bi-chevron-down arrow-icon"></i>
+            </div>
+            <div class="costs">
+                <div class="cost-row">
+                    <h2>Total (8 items)</h2>
+                    <p>$889.000</p>
+                </div>
+                <div class="cost-row">
+                    <h2>Shipping Fee</h2>
+                    <p>$0.00</p>
+                </div>
+                <div class="cost-row">
+                    <h2>Discount</h2>
+                    <p>$100.000</p>
+                </div>
+            </div>
+            <div class="pay-section">
+                <div class="cost-row2">
+                    <h2>Sub Total</h2>
+                    <p>$789.000</p>
+                </div>
+                <div class="product-pay" id="payButton">
+                        <p>Pay</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script> 
+</body>
+</html>

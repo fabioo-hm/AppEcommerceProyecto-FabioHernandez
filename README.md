@@ -30,4 +30,4 @@ Este proyecto fue creado con mucho cariño y atención al detalle. Cuenta con un
 
 ## 🔍Proyecto en la web
 
--Link= https://appecommercefabio.netlify.app/
+- Link= https://appecommercefabio.netlify.app/

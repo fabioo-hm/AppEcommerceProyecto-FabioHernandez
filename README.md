@@ -26,6 +26,8 @@ Este proyecto fue creado con mucho cariño y atención al detalle. Cuenta con un
 - [SweetAlert2](https://sweetalert2.github.io/)
 - Google Fonts (Roboto)
 
-##🔍Proyecto en la web
+---
+
+## 🔍Proyecto en la web
 
 -Link= https://appecommercefabio.netlify.app/
